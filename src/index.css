@@ -225,15 +225,18 @@ body {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
   width: 100%;
   perspective: 1200px;
 }
 
 /* ── Flip Card ──────────────────────────────────── */
 .flip-card-wrapper {
+  width: 100%;
+  max-width: 380px;
   aspect-ratio: 3/4;
   cursor: pointer;
   perspective: 1000px;
@@ -531,7 +534,7 @@ body {
   .gallery-header { margin-bottom: 1.5rem; }
   .gallery-title { font-size: clamp(1.8rem, 10vw, 2.5rem); }
   .gallery-subtitle { font-size: 0.95rem; }
-  .gallery-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .gallery-grid { gap: 1.5rem; }
 
   .card-front-title { font-size: 1.8rem; }
   .card-front-caption { font-size: 1rem; }
@@ -555,7 +558,7 @@ body {
 
 @media (max-width: 768px) and (min-width: 481px) {
   .gallery-section { padding-top: 3rem; padding-bottom: 3rem; min-height: auto; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .gallery-grid { gap: 2rem; }
   .love-note-container { padding: 2.5rem 1.5rem; }
   .note-text { font-size: 1.1rem; }
 }

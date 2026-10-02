@@ -344,7 +344,7 @@ function App() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, type: 'spring' }}
                 >
-                  Mis Momentos Favoritos
+                  Lo que amo de ti
                 </motion.h2>
                 <motion.p
                   className="gallery-subtitle elegant-text"
